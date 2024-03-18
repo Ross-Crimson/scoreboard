@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container bg-image mt-4">
+        <section class="row justify-content-evenly align-items-center text-center p-5">
+            <div class="col-4 pt-5">
+                <div class="score-card-home opacity-100 text-light p-3">
+                    <h2>Home</h2>
+                    <h2 id="home-score-display" class="p-3 my-5"></h2>
+                </div>
+                <div>
+                    <Button class="btn btn-primary p-3 my-3" onclick="HomeScored(1)">Home Score +1</Button>
+                </div>
+                <div>
+                    <Button class="btn btn-primary p-3 my-3" onclick="HomeScored(3)">Home Score +3</Button>
+                </div>
+            </div>
+            <div class="col-4 pt-5">
+                <div class="score-card-away opacity-100 text-light p-3">
+                    <h2>Away</h2>
+                    <h2 id="away-score-display" class="p-3 my-5"></h2>
+                </div>
+                <div>
+                    <button class="btn btn-success p-3 my-3" onclick="AwayScored(1)">Away Score +1</button>
+                </div>
+                <div>
+                    <button class="btn btn-success p-3 my-3" onclick="AwayScored(3)">Away Score +3</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="row justify-content-center text-center pb-5">
+            <div class="col">
+                <button class="btn btn-danger" onclick="ResetScore()">Reset</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
